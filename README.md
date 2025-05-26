@@ -61,15 +61,15 @@ This project is a Python-based converter application designed to perform various
 
 ## Installation
 
-1. Clone the repository:
-     ```bash
-     git clone https://github.com/Kxtss/unit-conversor-python.git
-     ```
-2. Navigate to the project directory:
+1. Navigate to the project directory:
     - create a new carpet in Desktop
     ```bash
     cd Conversor with Python
     ```
+2. Clone the repository:
+     ```bash
+     git clone https://github.com/Kxtss/unit-conversor-python.git
+     ```
 3. Install the required dependencies:
      ```bash
      pip install -r requirements.txt
