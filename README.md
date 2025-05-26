@@ -3,6 +3,7 @@
 This project is a Python-based converter application designed to perform various types of conversions, such as currency, temperature, and more. It is a simple and efficient tool for handling everyday conversion tasks.
 
 ![conversor](https://github.com/user-attachments/assets/5ba6a93a-89eb-4bc8-b827-3b73d19b7dbf)
+<br>
 <u>Developed based on the final project certification program for the Code in Place course offered by Stanford University.</u>
 
 ## Features
@@ -16,7 +17,8 @@ This project is a Python-based converter application designed to perform various
     - **KRW** *(South Korean Won)*
     - **CAD** *(Canadian Dollar)*
     - **AUD** *(Australian Dollar)*
-    ![currencies](https://github.com/user-attachments/assets/1806df9e-1571-463b-ad12-01e13d141b61)
+<br>
+![currencies](https://github.com/user-attachments/assets/1806df9e-1571-463b-ad12-01e13d141b61)
 - **Temperature Conversion**: Convert between Celsius, Fahrenheit, and Kelvin.
   ![temperatures](https://github.com/user-attachments/assets/90d26a0b-5b7c-4e81-b331-0edc28985aa2)
 - **Unit Conversion**: You can convert units of length and weight and mass units.
@@ -32,6 +34,7 @@ This project is a Python-based converter application designed to perform various
 - **Yard** 
 - **Mile** 
 - **Nautical Mile**
+<br>
 ![longitudes](https://github.com/user-attachments/assets/48839d16-8040-43e5-9973-08dee4416009)
 ### **Weight and Mass Units**
 - **Carat** 
@@ -48,6 +51,7 @@ This project is a Python-based converter application designed to perform various
 - **Stone** 
 - **Short Ton** 
 - **Long Ton**
+<br>
 ![weight and mass](https://github.com/user-attachments/assets/14527630-bc79-43de-923c-2f4ad64f4bef)
 - **User-Friendly Interface**: Easy-to-use interface for quick conversions.
 
