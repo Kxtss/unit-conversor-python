@@ -17,10 +17,12 @@ This project is a Python-based converter application designed to perform various
     - **KRW** *(South Korean Won)*
     - **CAD** *(Canadian Dollar)*
     - **AUD** *(Australian Dollar)*
-<br>
-![currencies](https://github.com/user-attachments/assets/1806df9e-1571-463b-ad12-01e13d141b61)
-- **Temperature Conversion**: Convert between Celsius, Fahrenheit, and Kelvin.
-  ![temperatures](https://github.com/user-attachments/assets/90d26a0b-5b7c-4e81-b331-0edc28985aa2)
+    <br>
+    ![currencies](https://github.com/user-attachments/assets/1806df9e-1571-463b-ad12-01e13d141b61)
+- **Temperature Conversion**:
+    - Convert between Celsius, Fahrenheit, and Kelvin.
+    <br>
+    ![temperatures](https://github.com/user-attachments/assets/90d26a0b-5b7c-4e81-b331-0edc28985aa2)
 - **Unit Conversion**: You can convert units of length and weight and mass units.
 ### **Longitud Units**
 - **Nanometer** 
