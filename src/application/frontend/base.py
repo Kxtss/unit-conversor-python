@@ -28,13 +28,13 @@ Run the script to launch the Unit Converter application. Use the menu buttons to
 """
 
 """Import necessary modules and classes"""
-import sys  # sys is used to manipulate the Python runtime environment
-import os  # os is used to interact with the operating system
+import sys  # Used to manipulate the Python runtime environment
+from pathlib import Path  # Used to handle file paths in a platform-independent way
 
-# Get the root directory path of the project (adjust as needed)
-# This is the suggested path if the project is located on the Desktop
-root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
-sys.path.append(root_dir)  # Add the root directory to the system path
+# Dynamically set the base directory for the application
+BASE_DIR = Path(__file__).resolve().parents[3]  # Assuming the structure is src/application/main.py
+if str(BASE_DIR) not in sys.path:
+    sys.path.append(str(BASE_DIR))  # Add the base directory to the system path
 
 from PyQt5.QtWidgets import (
     QApplication,  # QApplication is the main application class
@@ -340,7 +340,7 @@ class MainWindow(QMainWindow):
     def setCurrencyConversion(self):
         self.current_conversion_class = currencies
         self.label_title.setText("Unit Convert - Currencies")
-        self.line_edit_amount.setPlaceholderText("(exchage rate of 26, May, 2025)") # Set placeholder text for the amount input field
+        self.line_edit_amount.setPlaceholderText("(exchage rate of 2, June, 2025)") # Set placeholder text for the amount input field
         self.setComboBoxes(self.conversor_widget_currency.getCurrencyNames())
         self.btn_convert.clicked.disconnect()
         self.btn_convert.clicked.connect(self.setConversion)

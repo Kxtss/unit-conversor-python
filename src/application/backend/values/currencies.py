@@ -27,12 +27,12 @@ This class represents a currency with its name and value in USD.
 """
 
 class currencies:
-    """Exchange rates updated as of 26, May, 2025"""
+    """Exchange rates updated as of 2, June, 2025"""
 
     USD = currency("USD", 1)  # unit base
     MXN = currency("MXN", 0.052)  # 1 mxn = 0.052 usd
     EUR = currency("EUR", 1.14)  # 1 eur = 1.14 usd
-    GBP = currency("GBP", 1.36)  # 1 gbp = 1.36 usd
+    GBP = currency("GBP", 1.35)  # 1 gbp = 1.36 usd
     JPY = currency("JPY", 0.007)  # 1 jpy = 0.007 usd
     KRW = currency("KRW", 0.00073)  # 1 krw = 0.00073 usd
     CAD = currency("CAD", 0.73)  # 1 cad = 0.73 usd

@@ -9,14 +9,13 @@ Notes:
 - The `root_dir` is dynamically determined to allow importing modules from the project root directory.
 - The button in the interface is styled with a custom stylesheet and expands to fill available space.
 """
-import sys  # sys is used to manipulate the Python runtime environment
-import os  # os is used to interact with the operating system
+import sys  # Used to manipulate the Python runtime environment
+from pathlib import Path  # Used to handle file paths in a platform-independent way
 
-# Get the root directory path of the project (adjust as needed)
-# This is the suggested path if the project is located on the Desktop
-root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
-sys.path.append(root_dir)  # Add the root directory to the system path
-
+# Dynamically set the base directory for the application
+BASE_DIR = Path(__file__).resolve().parents[3]  # Assuming the structure is src/application/main.py
+if str(BASE_DIR) not in sys.path:
+    sys.path.append(str(BASE_DIR))  # Add the base directory to the system path
 """
 Dependencies:
 -------------

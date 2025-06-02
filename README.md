@@ -62,7 +62,7 @@ This project is a Python-based converter application designed to perform various
 ## Installation
 
 1. Navigate to the project directory:
-    - create a new carpet in Desktop
+    - create a new carpet in Desktop or somewhere
     ```bash
     cd Conversor with Python
     ```
@@ -74,21 +74,16 @@ This project is a Python-based converter application designed to perform various
      ```bash
      pip install -r requirements.txt
      ```
-4. **Note on Paths**: 
-If you decide to move your project elsewhere, you'll need to adjust the internal paths in your code that access files
-*uses logic like:*
-```bash
-    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
-``` 
-This involves adding or removing ".." depending on the depth of the folder.
-<u>*Recommending to use the Desktop path.*</u>
-
 ## Usage
 
-1. Run the application:
+1. Navigate to the main project directory:
      ```bash
-     python main.py
+     cd Conversor with Python\src\application
      ```
+3. Run the application or just Run Code:
+    ```bash
+    python main.py
+    ```
 2. Follow the on-screen instructions to perform conversions.
 
 
@@ -96,3 +91,4 @@ This involves adding or removing ".." depending on the depth of the folder.
 
 For any questions or feedback, please contact:
 - Discord: [tengokudaimakyo]
+- Email: [x.kxtss@outlook.com](x.kxtss@outlook.com)

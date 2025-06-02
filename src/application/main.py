@@ -33,20 +33,19 @@ Each conversion type is implemented in its own Python file/module, which is
 imported and used in the application.
 
 The root directory for the project is dynamically set based on the script's
-location, assuming a specific project structure relative to the Desktop
-(this part might need review depending on your actual project setup).
+location, allowing for a flexible project structure.
 
 author: Marco CU
 date: 2025-05-17
 version: 1.0
 """
 import sys  # Used to manipulate the Python runtime environment
-import os   # Used to interact with the operating system
+from pathlib import Path  # Used to handle file paths in a platform-independent way
 
-# Get the root directory path of the project (adjust as needed)
-# This is the suggested path if the project is located on the Desktop
-root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..', '..'))
-sys.path.append(root_dir)  # Add the root directory to the system path
+# Dynamically set the base directory for the application
+BASE_DIR = Path(__file__).resolve().parents[3]  # Assuming the structure is src/application/main.py
+if str(BASE_DIR) not in sys.path:
+    sys.path.append(str(BASE_DIR))  # Add the base directory to the system path
 
 from PyQt5.QtWidgets import QApplication
 from frontend.base import MainWindow
